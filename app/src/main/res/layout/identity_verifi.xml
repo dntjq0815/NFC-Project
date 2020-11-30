@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4859A4"
+    tools:context=".RegisterActivity">
+
+
+
+    <TextView
+        android:id="@+id/info_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:text="Tag Me\n회원가입을 위한 본인인증"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/inputs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/phone_num"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_edit_text_style"
+            android:hint="휴대폰 번호"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/request_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/login_button_style"
+            android:hint="인증번호 받기"
+            android:padding="15dp"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/certifi_num"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/request_button"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/round_edit_text_style"
+            android:hint="인증번호"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/certifi_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/login_button_style"
+            android:hint="인증하기"
+            android:padding="15dp"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/service_messege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="회원가입시" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="이용약관"
+            android:textColor="#9c59c9"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="에 동의하신 것으로 간주합니다." />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/service_messege"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login_button_style"
+        android:text="다음"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+
